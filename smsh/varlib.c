@@ -71,7 +71,7 @@ void VList(){
         if(tab[i].global)
             printf("*%s\n", tab[i].str);
         else
-            printf("s\n", tab[i].str);
+            printf("%s\n", tab[i].str);
     }
 }
 
