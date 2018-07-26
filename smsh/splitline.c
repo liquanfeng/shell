@@ -59,12 +59,12 @@ char**  splitline(char* line){
         len = 1;
         while(*++cp!='\0' && !(is_delim(*cp)))
             ++len;
+            /*
         if(*start=='$'){
-            ++start;
-            char* s = VLookup(start);
+            char* s = VLookup(*++start);
             args[argnum++] = newstr(s, strlen(s));
         }
-        else
+        else*/
             args[argnum++] = newstr(start, len);
 
     }
