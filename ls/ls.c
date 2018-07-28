@@ -52,7 +52,7 @@ void show_stat_info(char* fname, struct stat* info_p){
     mode_to_letters(info_p->st_mode, modestr);
     
     printf("%s", modestr);
-    printf("%2d ", (int)info_p->st_nlink);
+    printf("%3d ", (int)info_p->st_nlink);
     printf("%-2s ", uid_to_name(info_p->st_uid));
     printf("%-2s ", gid_to_name(info_p->st_gid));
     printf("%5ld ", (long)info_p->st_size);
