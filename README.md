@@ -2,7 +2,7 @@
 This ia a simple customed interpretator of shell
 
 usage:
-execute "sh smsh.sh" under /smsh
+> execute "sh smsh.sh" under /smsh
 
 functions:
 - custom ls
