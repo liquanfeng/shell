@@ -1,6 +1,9 @@
 # shell
 This ia a simple customed interpretator of shell
 
+usage:
+execute "sh smsh.sh" under /smsh
+
 functions:
 - custom ls
 - custom pwd
