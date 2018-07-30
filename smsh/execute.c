@@ -24,7 +24,14 @@ int execute(char* argv[]){
         signal(SIGINT, SIG_DFL);
         signal(SIGQUIT, SIG_DFL);
         //execvp(argv[0], argv);
-        if(strcmp(argv[0], "pwd")==0){
+        if(strcmp(argv[0], "who")==0){
+            if(count>2 && strcmp(argv[1], ">")==0)
+                redirect(argv, &fd);
+            else if(count>2 && strcmp(argv[1], "|")==0)
+                dopipe(argv);
+            execv("../who/who", NULL);
+        }
+        else if(strcmp(argv[0], "pwd")==0){
             if(count>2 && strcmp(argv[1], ">")==0)
                 redirect(argv, &fd);
             else if(count>2 && strcmp(argv[1], "|")==0)

@@ -9,6 +9,7 @@ functions:
 - custom pwd
 - custom who
 - custom cp
+- custom who
 - custom pipe "|"
 - custom redirection ">"
 - other unix/linux command but work with calling system command
